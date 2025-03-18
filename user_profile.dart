@@ -1,4 +1,4 @@
-class UserProfil {
+class UserProfile {
   //Attribute
   String lastName;
   String firstName;
@@ -9,6 +9,6 @@ class UserProfil {
   bool isPrivate;
 
   //Konstruktor
-  UserProfil(this.lastName, this.firstName, this.street, this.houseNumber,
+  UserProfile(this.lastName, this.firstName, this.street, this.houseNumber,
       this.zipCode, this.city, this.isPrivate);
 }
