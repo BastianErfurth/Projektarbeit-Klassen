@@ -1,4 +1,4 @@
-class ContracptpartnerProfile {
+class ContractpartnerProfile {
   //Attribute
   String companyName;
   String contactPersonName;
@@ -9,6 +9,6 @@ class ContracptpartnerProfile {
   bool isInContractList;
 
   //Konstruktor
-  ContracptpartnerProfile(this.companyName, this.contactPersonName, this.street,
+  ContractpartnerProfile(this.companyName, this.contactPersonName, this.street,
       this.houseNumber, this.zipCode, this.city, this.isInContractList);
 }

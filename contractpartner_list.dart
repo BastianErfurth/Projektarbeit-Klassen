@@ -2,12 +2,12 @@
 // und es gibt die Möglichkeit, eine neuen Vertragspartner anzulegen,
 // die dann automatisch in der Liste aller vorhandenen Vertragspartner ist zukünftig
 
-import 'contracptpartner_profile.dart';
+import 'contractpartner_profile.dart';
 
 class Contractpartners {
   //Attribute
   List<String> contPartners = [];
-  var ContracptpartnerProfile;
+  var ContractpartnerProfile;
 
-  Contractpartners(this.contPartners, this.ContracptpartnerProfile);
+  Contractpartners(this.contPartners, this.ContractpartnerProfile);
 }
