@@ -6,8 +6,7 @@ class UserLogin {
   bool hasClickedLogin;
   bool isLoginSuccessful;
 
-
-  UserLogin(this.email, this.password,this.hasClickedLogin,this isLoginSuccessful);
+  //Konstruktor
+  UserLogin(
+      this.email, this.password, this.hasClickedLogin, this.isLoginSuccessful);
 }
-
-
