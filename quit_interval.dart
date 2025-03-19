@@ -2,11 +2,20 @@ enum QuitInterval { Tag, Woche, Monat, Jahr }
 
 class ContractQuitInterval {
   //Attribute
-  int howManyInQuitUnits;
-  QuitInterval quitInterval;
-  bool isQuitRemeberAlerSet;
+  final int howManyInQuitUnits;
+  final QuitInterval quitInterval;
+  final bool isQuitRemeberAlerSet;
 
   //Konstruktor
   ContractQuitInterval(
-      this.howManyInQuitUnits, this.quitInterval, this.isQuitRemeberAlerSet);
+      {required this.howManyInQuitUnits,
+      required this.quitInterval,
+      required this.isQuitRemeberAlerSet});
+}
+
+void main() {
+  ContractQuitInterval a = ContractQuitInterval(
+      howManyInQuitUnits: 5,
+      quitInterval: QuitInterval.Woche,
+      isQuitRemeberAlerSet: true);
 }

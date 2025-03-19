@@ -16,3 +16,13 @@ class UserRegistration {
       required this.securityQuestion,
       required this.securityAnswer});
 }
+
+void main() {
+  UserRegistration user1 = UserRegistration(
+      lastName: "Müller",
+      firstName: "Max",
+      email: "mm@gmil.com",
+      password: "123456",
+      securityQuestion: "wie hieß dein erstes Haustier?",
+      securityAnswer: "Fiffi");
+}

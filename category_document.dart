@@ -2,10 +2,17 @@
 // und es gibt die Möglichkeit, eine neue Kategorie zu erstellen,
 // die dann automatisch in der Liste aller Kategoireien ist zukünftig
 
+enum DocCategory { Versicherungen, Wohnung, Mobilfunk }
+
 class CategoryDocument {
   //Attribute
-  List<String> docCategory = [];
-  String newCategory;
+  var DocCategory;
+  final String newCategory;
 
-  CategoryDocument(this.docCategory, this.newCategory);
+  CategoryDocument({required this.DocCategory, required this.newCategory});
+}
+
+void main() {
+  CategoryDocument a = CategoryDocument(
+      DocCategory: DocCategory.Mobilfunk, newCategory: "Freizeit");
 }
