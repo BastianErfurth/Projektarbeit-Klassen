@@ -1,13 +1,25 @@
-enum Interval { Tag, Woche, MOnat, Jahr, unbegrenzt }
+enum Interval { Tag, Woche, Monat, Jahr, unbegrenzt }
 
 class ContractRuntime {
   //Attribute
-  DateTime startDate;
+  var DateTime;
   int howManyinInterval;
-  Interval interval;
-  bool? isAutomaticExtend;
+  var Interval;
+  bool isAutomaticExtend;
 
   //Konstruktor
 
-  ContractRuntime(this.startDate, this.howManyinInterval, this.interval);
+  ContractRuntime(
+      {required this.DateTime,
+      required this.howManyinInterval,
+      required this.Interval,
+      required this.isAutomaticExtend});
+}
+
+void main() {
+  ContractRuntime hausrat = ContractRuntime(
+      DateTime: 01 - 03 - 2025,
+      howManyinInterval: 1,
+      Interval: Interval.Monat,
+      isAutomaticExtend: true);
 }

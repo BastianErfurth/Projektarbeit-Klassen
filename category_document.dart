@@ -13,6 +13,6 @@ class CategoryDocument {
 }
 
 void main() {
-  CategoryDocument a = CategoryDocument(
+  CategoryDocument sport = CategoryDocument(
       DocCategory: DocCategory.Mobilfunk, newCategory: "Freizeit");
 }
