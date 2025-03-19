@@ -1,4 +1,4 @@
-enum CostRepeatInterval { Tag, Woche, Monat, Qaurtal, Jahr }
+enum CostRepeatInterval { Tag, Woche, Monat, Quartal, Jahr }
 
 class ContractCostroutine {
   //Attribute

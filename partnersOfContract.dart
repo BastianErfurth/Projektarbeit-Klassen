@@ -1,14 +1,19 @@
-import 'contractpartner_profile.dart';
-import 'user_profile.dart';
+import 'contracptpartner_profile.dart';
+import 'user_profil.dart';
 
-class Partnersofcontract {
+class PartnersOfcontract {
   //Attribute
 
   var UserProfile;
   var ContractpartnerProfile;
-  String? contractnumber;
+  String contractnumber;
 
   //Konstruktor
-  Partnersofcontract(
+  PartnersOfcontract(
       this.UserProfile, this.ContractpartnerProfile, this.contractnumber);
+}
+
+void main() {
+  PartnersOfcontract a =
+      PartnersOfcontract(UserProfile, ContractpartnerProfile, "2265");
 }
