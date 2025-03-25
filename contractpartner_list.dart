@@ -9,5 +9,19 @@ class Contractpartners {
   List<String> contPartners = [];
   var ContractpartnerProfile;
 
-  Contractpartners(this.contPartners, this.ContractpartnerProfile);
+  Contractpartners(
+      {required this.contPartners, required this.ContractpartnerProfile});
+}
+
+void main() {
+  Contractpartners a = Contractpartners(
+      contPartners: ["Axa"],
+      ContractpartnerProfile: (ContractpartnerProfile(
+          companyName: "Züricher",
+          contactPersonName: "Frau Hollermann",
+          street: "hochgasse",
+          houseNumber: "34",
+          zipCode: "5445",
+          city: "Bern",
+          isInContractList: false)));
 }

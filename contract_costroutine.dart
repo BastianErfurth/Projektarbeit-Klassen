@@ -4,17 +4,17 @@ class ContractCostroutine {
   //Attribute
   double costs;
   int everyAgainIntervalNumber;
-  var CostRepeatInterval;
+  CostRepeatInterval costRepeatInterval;
   //Konstruktor
   ContractCostroutine(
       {required this.costs,
       required this.everyAgainIntervalNumber,
-      required this.CostRepeatInterval});
+      required this.costRepeatInterval});
 }
 
 void main() {
   ContractCostroutine kfzCost = ContractCostroutine(
       costs: 49.99,
       everyAgainIntervalNumber: 3,
-      CostRepeatInterval: CostRepeatInterval.Monat);
+      costRepeatInterval: CostRepeatInterval.Monat);
 }

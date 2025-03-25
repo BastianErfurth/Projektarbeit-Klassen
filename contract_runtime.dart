@@ -4,7 +4,7 @@ class ContractRuntime {
   //Attribute
   var DateTime;
   int howManyinInterval;
-  var Interval;
+  Interval interval;
   bool isAutomaticExtend;
 
   //Konstruktor
@@ -12,7 +12,7 @@ class ContractRuntime {
   ContractRuntime(
       {required this.DateTime,
       required this.howManyinInterval,
-      required this.Interval,
+      required this.interval,
       required this.isAutomaticExtend});
 }
 
@@ -20,6 +20,6 @@ void main() {
   ContractRuntime hausrat = ContractRuntime(
       DateTime: 01 - 03 - 2025,
       howManyinInterval: 1,
-      Interval: Interval.Monat,
+      interval: Interval.Monat,
       isAutomaticExtend: true);
 }

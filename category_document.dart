@@ -2,17 +2,24 @@
 // und es gibt die Möglichkeit, eine neue Kategorie zu erstellen,
 // die dann automatisch in der Liste aller Kategoireien ist zukünftig
 
-enum DocCategory { Versicherungen, Wohnung, Mobilfunk }
-
 class CategoryDocument {
   //Attribute
-  var DocCategory;
-  final String newCategory;
+  List<String> categories = ["Versicherungen", "Wohnung", "Mobilfunk"];
+  String newCategoryName;
 
-  CategoryDocument({required this.DocCategory, required this.newCategory});
+  CategoryDocument({required this.newCategoryName});
+
+  void addCategory(String newCategory) {
+    if (!categories.contains(newCategory)) {
+      categories.add(newCategoryName);
+      print("Kategorie: $newCategoryName hinzugefügt.");
+    } else {
+      print("Kategorie existiert schon.");
+    }
+  }
 }
 
 void main() {
-  CategoryDocument sport = CategoryDocument(
-      DocCategory: DocCategory.Mobilfunk, newCategory: "Freizeit");
+  CategoryDocument sport = CategoryDocument(newCategoryName: "Freizeit");
+  sport.addCategory("Freizeit");
 }
