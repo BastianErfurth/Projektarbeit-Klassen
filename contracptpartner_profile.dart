@@ -1,21 +1,20 @@
-class ContractpartnerProfile {
+import 'profile.dart';
+
+class ContractpartnerProfile extends Profile {
   //Attribute
+  // List<String> partnerprofiles = ["AXA Versicherung", "Allianz AG"];
   final String companyName;
   final String contactPersonName;
-  final String street;
-  final String houseNumber;
-  final String zipCode;
-  final String city;
   final bool isInContractList;
 
   //Konstruktor
   ContractpartnerProfile(
       {required this.companyName,
       required this.contactPersonName,
-      required this.street,
-      required this.houseNumber,
-      required this.zipCode,
-      required this.city,
+      required super.street,
+      required super.houseNumber,
+      required super.zipCode,
+      required super.city,
       required this.isInContractList});
 }
 

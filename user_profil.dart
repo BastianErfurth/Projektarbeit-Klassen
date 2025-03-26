@@ -1,21 +1,19 @@
-class UserProfile {
+import 'profile.dart';
+
+class UserProfile extends Profile {
   //Attribute
   final String lastName;
   final String firstName;
-  final String street;
-  final String houseNumber;
-  final String zipCode;
-  final String city;
   bool isPrivate;
 
   //Konstruktor
   UserProfile(
       {required this.lastName,
       required this.firstName,
-      required this.street,
-      required this.houseNumber,
-      required this.zipCode,
-      required this.city,
+      required super.street,
+      required super.houseNumber,
+      required super.zipCode,
+      required super.city,
       required this.isPrivate});
 }
 
